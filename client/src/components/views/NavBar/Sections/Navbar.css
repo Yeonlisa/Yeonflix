@@ -1,4 +1,10 @@
 @import '~antd/dist/antd.css';
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
 
 .menu {
   padding: 0 20px;
@@ -17,6 +23,8 @@
   display: inline-block;
   font-size: 20px;
   padding: 19px 20px;
+  font-family: 'Netflix Sans';
+  color: red;
 }
 
 .menu__container .ant-menu-item {
