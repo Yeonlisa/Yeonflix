@@ -25,7 +25,6 @@ function LandingPage() {
             .then(response => response.json())
             .then(response => {
                 console.log(response)
-
                 setMovies([...Movies, ...response.results])
                 setMainMovieImage(response.results[0])
                 setCurrentPage(response.page)
@@ -79,7 +78,7 @@ function LandingPage() {
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <button> Load More</button>
+                <button onClick={loadMoreItems}> Load More</button>
             </div>
 
         </div>
