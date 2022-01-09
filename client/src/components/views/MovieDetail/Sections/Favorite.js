@@ -19,8 +19,8 @@ function Favorite(props) {
 
         axios.post('/api/favorite/favoriteNumber', variables)
             .then(response => {
+                console.log(response.data)
                 if(response.data.success) {
-
                 } else {
                     alert('숫자 정보를 가져오는데 실패 했습니다.');
                 }
